@@ -16,7 +16,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Checking the page content'
-                sh 'grep -q "NOT-THERE" index.html'
+                sh 'grep -q "Student:" index.html'
             }
         }
         stage('Deploy') {
